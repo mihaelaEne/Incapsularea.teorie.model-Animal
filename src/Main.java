@@ -1,3 +1,4 @@
+import controllers.AnimalController;
 import model.Animal;
 import model.Oras;
 
@@ -36,12 +37,10 @@ public class Main {
 //
 //
 
-        Oras o1=new Oras("Bucuresti",3000000, 85);
-        Oras o2=new Oras("Alexandria", "Teleorman",500000, 45);
 
-        System.out.println(o1.descriereOras());
-        System.out.println("\n");
-        System.out.println(o2.descriereOras());
+        AnimalController animalController= new AnimalController();
+
+        animalController.afisareAnimal();
 
     }
 }

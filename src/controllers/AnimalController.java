@@ -10,7 +10,9 @@ public class AnimalController {
 
     public AnimalController(){
 
-        this.animals= new ArrayList<>();
+        this.animals= new ArrayList<>();//cream un obiect de tip lista si-l salvam in referinta animals
+
+        this.load();
     }
 
     public void load(){
