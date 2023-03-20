@@ -1,6 +1,8 @@
 import controllers.AnimalController;
+import controllers.OrasController;
 import model.Animal;
 import model.Oras;
+import view.ViewAnimal;
 
 public class Main {
     public static void main(String[] args) {
@@ -37,10 +39,17 @@ public class Main {
 //
 //
 
+//
+//        AnimalController animalController= new AnimalController();
+//
+//        animalController.afisareAnimal();
+//
+//
+//        OrasController orasController=new OrasController();
+//        orasController.afisareOras();
 
-        AnimalController animalController= new AnimalController();
 
-        animalController.afisareAnimal();
+        ViewAnimal viewAnimal=new ViewAnimal();
 
     }
 }

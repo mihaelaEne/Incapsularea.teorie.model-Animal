@@ -15,7 +15,7 @@ public class Animal {
 
     //cosntructori
     public Animal(){
-        System.out.println("Eus utn un constructor gol");
+        System.out.println("Eu sunt un constructor gol");
     }
 
     public Animal(String test){
