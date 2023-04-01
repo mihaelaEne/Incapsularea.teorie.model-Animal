@@ -3,6 +3,7 @@ package view;
 import controllers.AnimalController;
 import model.Animal;
 
+import java.util.ArrayList;
 import java.util.Scanner;
 
 public class ViewAnimal {
@@ -21,7 +22,7 @@ public class ViewAnimal {
         System.out.println("Apasa 2 pt a adauga un animal");
         System.out.println("Apasa 3 pt a sterge un animal");
         System.out.println("Apasa 4 pt a modifica un animal");
-
+        System.out.println("Apasa 5 pentru a alege animalele sortate dupa o anumita varsta ");
 
     }
 
@@ -46,6 +47,10 @@ public class ViewAnimal {
                     break;
                 case 4:
                     updateAnimal();
+                case 5:
+                    findByVarsta();
+
+                    break;
                 default:
                     System.out.println("Alegere gresita");
                     break;
@@ -77,6 +82,24 @@ public class ViewAnimal {
         }
     }
 
+    private void findByVarsta(){
+        System.out.println("Introduceti varsta de la care sa se afiseze animalele");
+        int varsta=Integer.parseInt(scanner.nextLine());
+
+        ArrayList<Animal> animaleList=animalController.findAnimalByVarsta(varsta);
+
+
+            if (animaleList.size()==0) {
+                System.out.println("Nu exista animale cu varsta >" + varsta);
+            } else {
+                for (int i = 0; i < animaleList.size(); i++) {
+                    Animal animal=animaleList.get(i);
+                    System.out.println(animal.descriereAnimal());
+                }
+                System.out.println("\nS-a terminat lista de animale");
+            }
+    }
+
     private void stergereAnimal() {
         System.out.println("Introduceti id-ul animalului");
         int id = Integer.parseInt(scanner.nextLine());
@@ -90,6 +113,7 @@ public class ViewAnimal {
         }
 
     }
+
 
     private void updateAnimal() {
         System.out.println("Introduceti numele-ul animalului");

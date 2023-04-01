@@ -1,0 +1,4 @@
+Alexandria,Teleorman,100,1
+Galati,Galati,500,2
+Constanta,Constanta,200,3
+Bucuresti,Bucuresti,800,4
