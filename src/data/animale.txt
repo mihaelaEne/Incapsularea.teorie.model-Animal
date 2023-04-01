@@ -1,0 +1,7 @@
+Pablo,123456,6,alb,Pantelimon,Dristor
+Burito,789456,5,negru,Corbeanca,Ilfov
+Mario,741258963,8,galben, Pitesti,Ploiesti
+Sasha,7894,2,moro,Constanta,Sibiu
+Orlando,11,1,verde,Baia Mare,Cluj
+Ares,12,3,blue,Medias,Bucuresti
+Max,4,8,negru,Timisoara,Chitila

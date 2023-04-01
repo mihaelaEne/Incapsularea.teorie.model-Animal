@@ -3,6 +3,7 @@ import controllers.OrasController;
 import model.Animal;
 import model.Oras;
 import view.ViewAnimal;
+import view.ViewOras;
 
 public class Main {
     public static void main(String[] args) {
@@ -25,13 +26,10 @@ public class Main {
 //        System.out.println(animal.getCuloare());
 //        System.out.println(animal.getLocatieAnterioara());
 //        System.out.println(animal.getLocatieActuala());
-//
-//
-//       Animal a3= new Animal("test",12,2,"culoare","test2");
-//
-
+//        Animal a2 = new Animal("test", 12, 3, "culoare", "test2");
+//        Animal a3 = new Animal("test", 12, 2, "culoare", "test2");
 //        Animal a4 = new Animal("Ares", 007, 1, "blue", "Medias", "Bucuresti");
-//        System.out.println(a4.descriereAnimal());
+//        System.out.println();
 //
 //        System.out.println("\n");
 //        a4.setNume("Ares A");
@@ -49,7 +47,7 @@ public class Main {
 //        orasController.afisareOras();
 
 
-        ViewAnimal viewAnimal=new ViewAnimal();
-
+        //ViewAnimal viewAnimal = new ViewAnimal();
+        ViewOras viewOras=new ViewOras();
     }
 }

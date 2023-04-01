@@ -18,9 +18,7 @@ public class Animal {
         System.out.println("Eu sunt un constructor gol");
     }
 
-    public Animal(String test){
-        System.out.println("Eu sunt un constructpr cu un parametru ");
-    }
+
 
 
     public Animal(String nume, int id,int varsta, String culoare, String locatieAnterioara){
@@ -29,6 +27,22 @@ public class Animal {
         this.varsta=varsta;
         this.culoare=culoare;
         this.locatieAnterioara=locatieAnterioara;
+
+    }
+
+
+    //pt fisierul text ->animale.txt
+    //Max,4,8,negru,Timisoara,Chitila
+
+    public Animal(String proprietati){
+
+        String[] split = proprietati.split(",");
+        this.nume= split[0];
+        this.id=Integer.parseInt(split[1]);
+        this.varsta=Integer.parseInt(split[2]);
+        this.culoare=split[3];
+        this.locatieAnterioara=split[4];
+        this.locatieActuala=split[5];
 
     }
 
