@@ -17,6 +17,12 @@ public class AnimalController {
         this.load();
     }
 
+    public  AnimalController(ArrayList<Animal> animals){
+
+
+        this.animals=animals;
+    }
+
     public void load() {
 
 
@@ -89,6 +95,9 @@ public class AnimalController {
         if (animal.getNume() != null) {
             deUpdatat.setNume(animal.getNume());
         }
+        if (animal.getLocatieAnterioara() != null) {
+            deUpdatat.setLocatieAnterioara(animal.getLocatieAnterioara());
+        }
         if (animal.getLocatieActuala() != null) {
             deUpdatat.setLocatieActuala(animal.getLocatieActuala());
         }
@@ -100,7 +109,7 @@ public class AnimalController {
 //todo:afisare animale ce au varsta dupa o valoare introdusa
 
     public ArrayList<Animal> findAnimalByVarsta(int varsta) {
-        ArrayList animaleList = new ArrayList();
+        ArrayList<Animal> animaleList = new ArrayList();
 
         for (int i = 0; i < this.animals.size(); i++) {
 

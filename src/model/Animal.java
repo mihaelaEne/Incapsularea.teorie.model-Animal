@@ -46,7 +46,9 @@ public class Animal {
 
     }
 
-    public Animal(String nume, int id,int varsta, String culoare, String locatieAnterioara, String locatieActuala) {
+
+
+    public Animal(String nume, int id, int varsta, String culoare, String locatieAnterioara, String locatieActuala) {
         this.nume = nume;
         this.id = id;
         this.varsta = varsta;
@@ -132,5 +134,9 @@ public class Animal {
         return text;
     }
 
+    @Override
+    public String toString() {
+        return nume + " " + id + " " + varsta + " " + culoare + " " + locatieAnterioara + " " + locatieActuala;
+    }
 
 }

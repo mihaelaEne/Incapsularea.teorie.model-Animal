@@ -101,7 +101,7 @@ public class ViewOras {
                 Oras oras=orasList.get(i);
                 System.out.println(oras.descriereOras());
             }
-            System.out.println("\n S-A TERMIKNAT LISTA DE ORASE");
+            System.out.println("\n S-A TERMINAT LISTA DE ORASE");
         }
 
     }
