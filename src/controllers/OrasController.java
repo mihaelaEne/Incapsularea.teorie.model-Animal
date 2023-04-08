@@ -15,6 +15,11 @@ public class OrasController {
         this.load();
     }
 
+
+    public OrasController(ArrayList<Oras> orase){
+        this.orase=orase;
+    }
+
     public void load() {
         try {
             File file = new File("C:\\mycode\\OOP\\incapsularea\\Teorie\\src\\data\\orase.txt");
